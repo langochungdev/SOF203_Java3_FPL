@@ -1,0 +1,75 @@
+<%@ page pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
+<%-- <%@ taglib prefix="c" uri="jakarta.tags.core" %> --%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Employee Management</title>
+</head>
+<body>
+    <c:url var="path" value="/employee" />
+    <!-- FORM -->
+    <form method="post" enctype="multipart/form-data">
+        <label>Id:</label><br> <input name="id" value="${item.id}"><br>
+        <label>Fullname:</label><br> <input name="fullname" value="${item.fullname}"><br>
+        <label>Password:</label><br> <input type="password" name="password" value="${item.password}"><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="true" <c:if test="${item.gender == true}">checked</c:if> /> Male
+        <input type="radio" name="gender" value="false" <c:if test="${item.gender == false}">checked</c:if> /> Female<br>
+       <input type="date" name="birthday" value="${item.birthday != null ? item.birthday : ''}">
+
+        <label>Salary:</label><br> 
+        <!-- Không sử dụng định dạng số trong input mà giữ giá trị thuần túy -->
+        <input type="number" step="0.01" name="salary" value="${item.salary}"><br><br>
+        <label>Department:</label><br>
+        <select name="departmentId">
+            <c:forEach var="d" items="${departmentList}">
+                <option value="${d.id}" <c:if test="${item.departmentId == d.id}">selected</c:if>>${d.name}</option>
+            </c:forEach>
+        </select><br>
+        <label>Photo:</label><br> <input type="file" name="photo"><br><br>
+        <hr>
+        <button formaction="${path}/create">Create</button>
+        <button formaction="${path}/update">Update</button>
+        <button formaction="${path}/delete">Delete</button>
+        <button formaction="${path}/reset">Reset</button>
+    </form>
+    <hr>
+    <!-- TABLE -->
+    <table border="1" style="width: 100%">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Id</th>
+                <th>Fullname</th>
+                <th>Department</th>
+                <th>Gender</th>
+                <th>Birthday</th>
+                <th>Salary</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <c:forEach var="e" items="${list}" varStatus="vs">
+                <tr>
+                    <td>${vs.count}</td>
+                    <td>${e.id}</td>
+                    <td>${e.fullname}</td>
+                    <td>${e.departmentId}</td>
+                    <td><c:if test="${e.gender == true}">Male</c:if><c:if test="${e.gender == false}">Female</c:if></td>
+                    <td>${e.birthday}</td>
+                    <td>
+                        <!-- Định dạng lương hiển thị trong bảng -->
+                        <fmt:formatNumber value="${e.salary}" type="currency" currencySymbol="₫" />
+                    </td>
+                    <td><a href="${path}/edit/${e.id}">Edit</a></td>
+                </tr>
+            </c:forEach>
+        </tbody>
+    </table>
+</body>
+</html>

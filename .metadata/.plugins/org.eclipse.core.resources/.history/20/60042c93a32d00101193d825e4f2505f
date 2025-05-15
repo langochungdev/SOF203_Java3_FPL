@@ -1,0 +1,34 @@
+package Servlet;
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/b1_CountryServlet")
+public class b1_CountryServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public b1_CountryServlet() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		List<b1_Country> list = List.of(
+			new b1_Country("VN", "VietNam"),
+			new b1_Country("US", "United States"),
+			new b1_Country("CN", "China")
+		);
+		req.setAttribute("countries", list);
+		req.getRequestDispatcher("/views/b2_form.jsp").forward(req, resp);
+	}
+
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		doGet(req, resp);
+	}
+
+}

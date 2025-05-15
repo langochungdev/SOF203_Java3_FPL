@@ -1,0 +1,13 @@
+1746517206932	Delete element
+1746517259405	Rename resource 'd'
+1746517282256	Delete element
+1746517369804	Rename type 'jdbc'
+1746517639848	Rename type 'DepartmentE'
+1746517881328	Rename compilation unit 'DepartmentDAOlmpl.java'
+1746518013767	Delete element
+1746518018600	Move 'b1_lab7.sql' to 'Lab7'
+1746518096471	Delete element
+1746520605233	Rename compilation unit 'Employees.java'
+1746520704367	Rename type 'Employee'
+1746520730063	Rename compilation unit 'EmployeeImpl.java'
+1746520744481	Rename compilation unit 'EmployeeDAOImplImpl.java'
