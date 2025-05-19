@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 public class b2_b3_SeclectSQL {
 	public static void main(String[] args) {
 		try {
-			String sql = "SELECT * FROM Departments;";
+			String sql = "SELECT * FROM Departments";
 			ResultSet resultSet = jdbc.execQuery(sql);
 			while (resultSet.next()) {
 				String value = resultSet.getString("name");

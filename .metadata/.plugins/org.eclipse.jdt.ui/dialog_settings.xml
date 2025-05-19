@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="ProjectSelectionDialog.show_all" value="true"/>
-	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Java3_space\lib"/>
-	<item key="SearchScopeActionGroup.search_scope_type" value="1"/>
-	<item key="CallHierarchyViewPart.call_mode" value="0"/>
-	<item key="CallHierarchyViewPart.field_mode" value="2"/>
-	<item key="CallHierarchyViewPart.ratio3" value="500"/>
-	<item key="CallHierarchyViewPart.orientation" value="3"/>
-	<item key="CallHierarchyViewPart.ratio0" value="500"/>
-	<section name="JavaElementSearchActions">
-	</section>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
-	<section name="BuildPathsPropertyPage">
-		<item key="pageIndex" value="2"/>
+	<section name="JavaElementSearchActions">
 	</section>
-	<section name="org.eclipse.jdt.internal.ui.preferences.EditTemplateDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="154"/>
-		<item key="DIALOG_Y_ORIGIN" value="150"/>
-		<item key="DIALOG_WIDTH" value="690"/>
-		<item key="DIALOG_HEIGHT" value="315"/>
+	<section name="NewAnnotationCreationWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="504"/>
+		<item key="DIALOG_Y_ORIGIN" value="11"/>
+		<item key="DIALOG_WIDTH" value="935"/>
+		<item key="DIALOG_HEIGHT" value="853"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="NewSourceFolderCreationWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="534"/>
+		<item key="DIALOG_Y_ORIGIN" value="193"/>
+		<item key="DIALOG_WIDTH" value="875"/>
+		<item key="DIALOG_HEIGHT" value="537"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="NewPackageCreationWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="534"/>
+		<item key="DIALOG_Y_ORIGIN" value="193"/>
+		<item key="DIALOG_WIDTH" value="875"/>
+		<item key="DIALOG_HEIGHT" value="537"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="NewPackageWizardPage">
+		<item key="create_package_info_java" value="false"/>
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
@@ -32,94 +38,13 @@
 		<item key="create_unimplemented" value="true"/>
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="341"/>
-		<item key="DIALOG_Y_ORIGIN" value="64"/>
-		<item key="DIALOG_WIDTH" value="544"/>
-		<item key="DIALOG_HEIGHT" value="636"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-	</section>
-	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
-		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH" value="450"/>
-		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT" value="380"/>
-		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
-		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
-	</section>
-	<section name="SourceActionDialog.methods">
-		<item key="VisibilityModifier" value="1"/>
-		<item key="FinalModifier" value="false"/>
-		<item key="SynchronizedModifier" value="false"/>
-		<item key="Comments" value="false"/>
-	</section>
-	<section name="AddGetterSetterDialog">
-		<item key="SortOrdering" value="false"/>
-		<item key="RemoveFinal" value="false"/>
-	</section>
-	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="352"/>
-		<item key="DIALOG_Y_ORIGIN" value="7"/>
-		<item key="DIALOG_WIDTH" value="590"/>
-		<item key="DIALOG_HEIGHT" value="720"/>
+		<item key="DIALOG_X_ORIGIN" value="534"/>
+		<item key="DIALOG_Y_ORIGIN" value="196"/>
+		<item key="DIALOG_WIDTH" value="875"/>
+		<item key="DIALOG_HEIGHT" value="895"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
-	<section name="SourceActionDialog.constructors">
-		<item key="VisibilityModifier" value="1"/>
-		<item key="FinalModifier" value="false"/>
-		<item key="SynchronizedModifier" value="false"/>
-		<item key="Comments" value="false"/>
-	</section>
-	<section name="GenerateConstructorUsingFieldsSelectionDialog">
-		<item key="OmitCallToSuper" value="false"/>
-	</section>
-	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="352"/>
-		<item key="DIALOG_Y_ORIGIN" value="7"/>
-		<item key="DIALOG_WIDTH" value="590"/>
-		<item key="DIALOG_HEIGHT" value="720"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-	</section>
-	<section name="RenameInformationPopup">
-	</section>
-	<section name="org.eclipse.ltk.ui.refactoring.settings">
-		<item key="updateTextualMatches" value="false"/>
-		<item key="updateSimilarElements" value="false"/>
-		<item key="updateSimilarElementsMatchStrategy" value="1"/>
-		<item key="updateQualifiedNames" value="false"/>
-		<item key="patterns" value="*"/>
-	</section>
-	<section name="RefactoringWizard.preview">
-		<item key="width" value="600"/>
-		<item key="height" value="400"/>
-	</section>
-	<section name="NewInterfaceCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="341"/>
-		<item key="DIALOG_Y_ORIGIN" value="64"/>
-		<item key="DIALOG_WIDTH" value="550"/>
-		<item key="DIALOG_HEIGHT" value="528"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-	</section>
-	<section name="SearchInDialog">
-		<item key="SearchInSources" value="true"/>
-		<item key="SearchInProjects" value="true"/>
-		<item key="SearchInJRE" value="true"/>
-		<item key="SearchInAppLibs" value="true"/>
-	</section>
-	<section name="CallHierarchySearchScope">
-	</section>
-	<section name="NewPackageCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="-128"/>
-		<item key="DIALOG_Y_ORIGIN" value="150"/>
-		<item key="DIALOG_WIDTH" value="525"/>
-		<item key="DIALOG_HEIGHT" value="433"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-	</section>
-	<section name="NewPackageWizardPage">
-		<item key="create_package_info_java" value="false"/>
-	</section>
-	<section name="AddSourceFolderWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="215"/>
-		<item key="DIALOG_Y_ORIGIN" value="0"/>
-		<item key="DIALOG_WIDTH" value="613"/>
-		<item key="DIALOG_HEIGHT" value="551"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="3"/>
 	</section>
 </section>

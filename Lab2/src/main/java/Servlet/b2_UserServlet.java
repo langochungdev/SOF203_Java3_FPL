@@ -8,19 +8,16 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-
 @WebServlet("/b2_UserServlet")
 public class b2_UserServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("message", "wellcome to fpl");
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.setAttribute("message", "wellcome to fpl");
 		Map<String, Object> m = new HashMap<String, Object>();;
 		m.put("fullname", "La Ngoc Hung");
 		m.put("gender", "Male");
 		m.put("country", "VietNam");
-		request.setAttribute("user", m);
+		req.setAttribute("user", m);
 		
-		request.getRequestDispatcher("/views/b2_page.jsp").forward(request, response);
+		req.getRequestDispatcher("/views/b2_page.jsp").forward(req, resp);
 	}
 }

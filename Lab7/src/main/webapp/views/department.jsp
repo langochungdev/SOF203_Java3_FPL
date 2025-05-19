@@ -9,7 +9,6 @@
 </head>
 <body>
 	<c:url var="path" value="/department" />
-	<!-- FORM -->
 	<form method="post" >
 		<label>Id:</label><br> <input name="id" value="${item.id}"><br>
 		<label>Name:</label><br> <input name="name" value="${item.name}"><br>
@@ -22,7 +21,7 @@
 		<button formaction="${path}/reset">Reset</button>
 	</form>
 	<hr>
-	<!-- TABLE -->
+
 	<table border="1" style="width: 100%">
 		<thead>
 			<tr>

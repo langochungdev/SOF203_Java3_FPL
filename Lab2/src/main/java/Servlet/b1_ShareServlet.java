@@ -9,11 +9,10 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/ShareServlet")
 public class b1_ShareServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("message", "Wellcome to fpl");
-		request.setAttribute("now", new Date());
-		request.getRequestDispatcher("/views/b1_page.jsp").forward(request, response);
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.setAttribute("message", "Wellcome to fpl");
+		req.setAttribute("now", new Date());
+		req.getRequestDispatcher("/views/b1_page.jsp").forward(req, resp);
 	}
 }

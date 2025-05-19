@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 public class b4_CallStatement {
 	public static void main(String[] args) {
 		try { 
-			 String sql = "{CALL spSelectAll }"; 
+			 String sql = "{CALL spSelectAll}"; 
 			 ResultSet resultSet = jdbc.execQuery(sql); 
 			 while(resultSet.next()) { 
 			  String value = resultSet.getString("name"); 

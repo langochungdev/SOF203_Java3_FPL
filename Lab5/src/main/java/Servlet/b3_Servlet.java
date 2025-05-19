@@ -11,12 +11,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/login")
 public class b3_Servlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
-	public b3_Servlet() {
-		super();
-	}
-
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		Cookie[] cookies = req.getCookies();
 		if (cookies != null) {

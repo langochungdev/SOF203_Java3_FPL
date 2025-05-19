@@ -1,138 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="wizardPage">
-		<list key="groupId">
-			<item value="test2"/>
-			<item value="test1"/>
-			<item value="Lab4"/>
-			<item value="Lab3"/>
-			<item value="Lab2"/>
-			<item value="Lab1"/>
-			<item value="Lab8"/>
-			<item value="Lab7"/>
-			<item value="Lab6"/>
-			<item value="Lab5"/>
-			<item value="t4"/>
-			<item value="t3"/>
-			<item value="t2"/>
-			<item value="t1"/>
-			<item value="InputYourName"/>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Java3_space\lab8tn"/>
+			<item value="C:\Java3_space\Lab7"/>
+			<item value="C:\Java3_space\Lab6"/>
+			<item value="C:\Java3_space\Lab5"/>
+			<item value="C:\Java3_space\Lab4"/>
+			<item value="C:\Java3_space\Lab3"/>
+			<item value="C:\Java3_space\Lab2"/>
+			<item value="C:\Java3_space\Lab1"/>
 		</list>
-		<list key="name">
-			<item value="test2"/>
-			<item value="test1"/>
-			<item value="Lab4"/>
-			<item value="Lab3"/>
-			<item value="Lab2"/>
-			<item value="Lab1"/>
-			<item value="Lab8"/>
-			<item value="Lab7"/>
-			<item value="Lab6"/>
-			<item value="Lab5"/>
-			<item value="t4"/>
-			<item value="t2"/>
-			<item value="t1"/>
-			<item value="InputYourName"/>
-		</list>
-		<list key="artifactId">
-			<item value="test2"/>
-			<item value="test1"/>
-			<item value="Lab4"/>
-			<item value="Lab3"/>
-			<item value="Lab2"/>
-			<item value="Lab1"/>
-			<item value="Lab8"/>
-			<item value="Lab7"/>
-			<item value="Lab6"/>
-			<item value="Lab5"/>
-			<item value="t4"/>
-			<item value="t3"/>
-			<item value="t2"/>
-			<item value="t1"/>
-			<item value="InputYourName"/>
-		</list>
-		<list key="version">
-			<item value="0.0.1-SNAPSHOT"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
-	<section name="MavenProjectWizardLocationPage">
-		<list key="location">
-			<item value="C:\Java3_space\t2\src\main\java"/>
-		</list>
-		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
-			<item value="[artifactId]-TRUNK"/>
-			<item value="[artifactId]-[version]"/>
-			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
-			<item value="[name]"/>
-		</list>
-	</section>
-	<section name="MavenProjectWizardArchetypePage">
-		<item key="catalog" value="All Catalogs"/>
-		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
-			<item value="[artifactId]-TRUNK"/>
-			<item value="[artifactId]-[version]"/>
-			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
-			<item value="[name]"/>
-		</list>
-	</section>
-	<section name="Maven2ProjectWizardArchifactPage">
-		<list key="package">
-		</list>
+	<section name="wizardPage">
 		<list key="groupId">
-		</list>
-		<list key="artifactId">
-		</list>
-		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
-			<item value="[artifactId]-TRUNK"/>
-			<item value="[artifactId]-[version]"/>
-			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
-			<item value="[name]"/>
-		</list>
-		<list key="version">
-			<item value="0.0.1-SNAPSHOT"/>
-		</list>
-	</section>
-	<section name="MavenProjectWizardArtifactPage">
-		<list key="groupId">
+			<item value="d"/>
+			<item value="Lab"/>
+			<item value="Lab8"/>
 		</list>
 		<list key="name">
+			<item value="d"/>
+			<item value="Lab"/>
+			<item value="Lab8"/>
 		</list>
 		<list key="artifactId">
-		</list>
-		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
-			<item value="[artifactId]-TRUNK"/>
-			<item value="[artifactId]-[version]"/>
-			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
-			<item value="[name]"/>
+			<item value="d"/>
+			<item value="Lab"/>
+			<item value="Lab8"/>
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
-		</list>
-	</section>
-	<section name="MavenProjectImportWizardPage">
-		<list key="rootDirectory">
-			<item value="C:\Java3_space\lab8tn\lab8tn"/>
-			<item value="C:\Users\lango\Downloads\lab8tn"/>
-		</list>
-		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
-			<item value="[artifactId]-TRUNK"/>
-			<item value="[artifactId]-[version]"/>
-			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
-			<item value="[name]"/>
 		</list>
 	</section>
 </section>

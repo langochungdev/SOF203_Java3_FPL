@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class Jdbc {
 	public static final String HOSTNAME = "localhost";
 	public static final String PORT = "1433";
-	public static final String DBNAME = "Lab6";
+	public static final String DBNAME = "lab67";
 	public static final String USERNAME = "sa";
 	public static final String PASSWORD = "songlong";
 

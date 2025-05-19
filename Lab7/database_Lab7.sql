@@ -1,3 +1,5 @@
+create database lab67
+use lab67
 -- Tạo bảng Phòng ban
 CREATE TABLE Departments (
     Id CHAR(3) NOT NULL,             -- Mã phòng ban
@@ -8,14 +10,14 @@ CREATE TABLE Departments (
 
 -- Tạo bảng Nhân viên
 CREATE TABLE Employees (
-    Id VARCHAR(20) NOT NULL,           -- Mã nhân viên
-    Password NVARCHAR(50) NOT NULL,    -- Mật khẩu
-    Fullname NVARCHAR(50) NOT NULL,    -- Họ tên
-    Photo NVARCHAR(50) NOT NULL,       -- Ảnh đại diện
-    Gender BIT NOT NULL,               -- Giới tính (1: Nam, 0: Nữ)
-    Birthday DATE NOT NULL,            -- Ngày sinh
-    Salary FLOAT NOT NULL,             -- Lương cơ bản
-    DepartmentId CHAR(3) NOT NULL,     -- Mã phòng ban
+    Id VARCHAR(20) not NULL,           -- Mã nhân viên
+    Password NVARCHAR(50)  NULL,    -- Mật khẩu
+    Fullname NVARCHAR(50)  NULL,    -- Họ tên
+    Photo NVARCHAR(50)  NULL,       -- Ảnh đại diện
+    Gender BIT  NULL,               -- Giới tính (1: Nam, 0: Nữ)
+    Birthday DATE  NULL,            -- Ngày sinh
+    Salary FLOAT  NULL,             -- Lương cơ bản
+    DepartmentId CHAR(3) not NULL,     -- Mã phòng ban
     PRIMARY KEY (Id),
     FOREIGN KEY (DepartmentId) REFERENCES Departments(Id)
         ON DELETE CASCADE

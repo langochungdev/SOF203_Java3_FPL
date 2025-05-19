@@ -12,14 +12,13 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	public void create(Employee emp) {
 	    String sql = "INSERT INTO Employees (Id, Password, Fullname, Photo, Gender, Birthday, Salary, DepartmentId) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 	    try (Connection conn = Jdbc.getConnection();
-	         PreparedStatement pstmt = conn.prepareStatement(sql)) {
+	        PreparedStatement pstmt = conn.prepareStatement(sql)) {
 	        pstmt.setString(1, emp.getId());
 	        pstmt.setString(2, emp.getPassword());
 	        pstmt.setString(3, emp.getFullname());
 	        pstmt.setString(4, emp.getPhoto());
 	        pstmt.setBoolean(5, emp.isGender());
 
-	        // Kiểm tra birthday là null hay không
 	        if (emp.getBirthday() != null) {
 	            pstmt.setDate(6, new java.sql.Date(emp.getBirthday().getTime()));
 	        } else {

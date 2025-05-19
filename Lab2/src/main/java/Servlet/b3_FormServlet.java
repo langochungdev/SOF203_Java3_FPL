@@ -10,15 +10,13 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/form/update")
 public class b3_FormServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		Map<String, Object> m = new HashMap<String, Object>();;
 		m.put("fullname", "La Ngoc Hung");
 		m.put("gender", true);
 		m.put("country", "VN");
-		request.setAttribute("user", m);
-		request.setAttribute("editable", true);
-		request.getRequestDispatcher("/views/b3_form.jsp").forward(request, response);
+		req.setAttribute("user", m);
+		req.setAttribute("editable", true);
+		req.getRequestDispatcher("/views/b3_form.jsp").forward(req, resp);
 	}
 }

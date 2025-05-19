@@ -1,5 +1,4 @@
 package SERVLET;
-
 import java.io.IOException;
 import java.util.List;
 import jakarta.servlet.ServletException;
@@ -13,13 +12,9 @@ import DAO.DepartmentDAO;
 import DAO.DepartmentDAOImpl;
 import ENTITY.Department;
 
-@WebServlet({ "/department/index", "/department/edit/*", "/department/create", "/department/update",
+@WebServlet({"/department/index", "/department/edit/*", "/department/create", "/department/update",
 		"/department/delete", "/department/reset" })
-
 public class DepartmentSL extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
-	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setCharacterEncoding("UTF-8");
 		Department form = new Department();
@@ -28,6 +23,7 @@ public class DepartmentSL extends HttpServlet {
 		} catch (IllegalAccessException | InvocationTargetException e) {
 			e.printStackTrace();
 		}
+		
 		DepartmentDAO dao = new DepartmentDAOImpl();
 		String path = req.getServletPath();
 		if (path.contains("edit")) {

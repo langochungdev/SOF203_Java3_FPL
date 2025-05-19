@@ -18,8 +18,6 @@ public class b2_Mailer {
 		props.setProperty("mail.smtp.port", "587"); 
 		props.setProperty("mail.smtp.ssl.protocols", "TLSv1.2");
 
-		
-		
 		String username = "langochungse23@gmail.com";
 		String password = "cajf dbqb ofzr mddu";
 		Session session = Session.getInstance(props, new Authenticator() {
@@ -41,8 +39,6 @@ public class b2_Mailer {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		
 	}
 
 }

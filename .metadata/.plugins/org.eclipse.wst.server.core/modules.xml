@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <modules>
-  <module moduleId="org.eclipse.jst.jee.server:Lab8" serverId="Tomcat v9.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.j2ee.server:InputYourName" serverId="Tomcat v11.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Lab8" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Lab6" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Lab7" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Lab4" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Lab5" serverId="Tomcat v10.1 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Lab" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Lab2" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Lab3" serverId="Tomcat v10.1 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:InputYourName" serverId="Tomcat v11.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Lab1" serverId="Tomcat v10.1 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:test1" serverId="Tomcat v10.1 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:HelloWorld" serverId="Tomcat v11.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:MavenProject" serverId="Tomcat v9.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.j2ee.server:t3" serverId="Tomcat v11.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.j2ee.server:t2" serverId="Tomcat v11.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:t4" serverId="Tomcat v9.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:lab8tn" serverId="Tomcat v9.0 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:t2" serverId="Tomcat v11.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:lab8tn" serverId="Tomcat v10.1 Server at localhost"/>
 </modules>

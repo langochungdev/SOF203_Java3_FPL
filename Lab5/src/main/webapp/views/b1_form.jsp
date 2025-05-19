@@ -24,7 +24,7 @@
         <option value="VN">Việt Nam</option> 
         <option value="US" selected>United States</option> 
     </select> <br> 
- 
+ 	salary:
     <input name="salary"> <br> 
  
     <hr> 
