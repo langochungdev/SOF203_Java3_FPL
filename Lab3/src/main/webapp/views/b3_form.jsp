@@ -13,7 +13,7 @@
 		<li>Name: ${item.name}</li>
 		<li>Price: <fmt:formatNumber value="${item.price}" pattern="#,###.00"/>
 		</li>
-		<li>Date: <fmt:formatDate value="${item.date}" pattern="MMM dd, yyyy"/>
+		<li>Date: <fmt:formatDate value="${item.date}" pattern="dd/MM/yyyy"/>
 		</li>
 	</ul>
 </body>

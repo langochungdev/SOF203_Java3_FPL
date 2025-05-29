@@ -1,4 +1,5 @@
 package Servlet;
+import java.io.File;
 import java.io.IOException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
@@ -19,12 +20,15 @@ public class b4_upfile extends HttpServlet {
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		Part photo = req.getPart("photo");
-//		String path = "/static/files/"+ photo.getSubmittedFileName();
-//		String filename = req.getServletContext().getRealPath(path);
-		
-		String path = "D:/" + photo.getSubmittedFileName();
-		String filename = path; 
-		photo.write(filename);
+		String filename = photo.getSubmittedFileName();
+			String path = req.getServletContext().getRealPath("/imgs");
+			File f = new File(path);
+			if (!f.exists()) f.mkdirs();
+			photo.write(path + "/" + filename);
+			
+		req.setAttribute("path", path);
+		req.setAttribute("filename", filename);
 		req.getRequestDispatcher("/views/b4_upfile.jsp").forward(req, resp);
 	}
+
 }

@@ -9,7 +9,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/ShareServlet")
 public class b1_ShareServlet extends HttpServlet {
-
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setAttribute("message", "Wellcome to fpl");
 		req.setAttribute("now", new Date());

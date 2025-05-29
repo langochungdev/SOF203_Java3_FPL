@@ -8,12 +8,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-
-
 @WebServlet("/b4_funtionsServlet")
 public class b4_functionsSL extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		Map<String, Object> map = new HashMap<>(); 
 		map.put("title", "Tiêu đề bản tin"); 

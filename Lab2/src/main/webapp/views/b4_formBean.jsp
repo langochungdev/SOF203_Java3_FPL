@@ -15,7 +15,7 @@
 	<input type="radio" name="gender" ${!user.gender ? 'checked="checked"':''}>Female<br>
 	<div>Country: ${user.country}</div>
 	<select name="country">
-		<option value="VN" ${user.country=='VN' ? 'selected="selected"' : ''}>Viet Nam</option> 
+		<option value="VN" ${user.country=='VN' ? 'selected="t"' : ''}>Viet Nam</option> 
 		<option value="US" ${user.country=='US' ? 'selected="selected"' : ''}>United States</option>
 		<option value="CN" ${user.country=='CN' ? 'selected="selected"' : ''}>China</option>
 	</select>

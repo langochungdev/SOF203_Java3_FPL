@@ -8,8 +8,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet({ "/calculate/add", "/calculate/sub" })
 public class b2_formNhieuNut extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setAttribute("message", "Nhập số và chọn phép tính");
 		req.getRequestDispatcher("/views/b2_form.jsp").forward(req, resp);

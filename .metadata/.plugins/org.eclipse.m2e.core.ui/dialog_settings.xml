@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Java3_space\j3asmDemo"/>
+			<item value="C:\Java3_space\e-commerce-application-jsp-master"/>
 			<item value="C:\Java3_space\lab8tn"/>
 			<item value="C:\Java3_space\Lab7"/>
 			<item value="C:\Java3_space\Lab6"/>
@@ -26,16 +28,19 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="ASM"/>
 			<item value="d"/>
 			<item value="Lab"/>
 			<item value="Lab8"/>
 		</list>
 		<list key="name">
+			<item value="ASM"/>
 			<item value="d"/>
 			<item value="Lab"/>
 			<item value="Lab8"/>
 		</list>
 		<list key="artifactId">
+			<item value="ASM"/>
 			<item value="d"/>
 			<item value="Lab"/>
 			<item value="Lab8"/>

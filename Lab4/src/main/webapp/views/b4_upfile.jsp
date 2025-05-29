@@ -7,10 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:url value="b4_upfile" var="url"/>
-	<form action="${url}" method="post" enctype="multipart/form-data">
+<%-- 	<c:url value="b4_upfile" var="url"/> --%>
+	<form action="./b4_upfile" method="post" enctype="multipart/form-data">
 		<input name="photo" type="file"><br>
 		<button>Upload</button>
 	</form>
+	${path} <br>
+	<c:if test="${not empty filename}">
+	<img src="${pageContext.request.contextPath}/imgs/${filename}" style="max-width:200px">
+</c:if>
+
 </body>
 </html>

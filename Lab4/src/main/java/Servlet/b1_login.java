@@ -8,15 +8,11 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/account/login")
 public class b1_login extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
-	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setAttribute("message", "Enter username and password");
 		req.getRequestDispatcher("/views/b1_login.jsp").forward(req, resp);
 	}
 
-	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String username = req.getParameter("un");
 		String password = req.getParameter("pw");

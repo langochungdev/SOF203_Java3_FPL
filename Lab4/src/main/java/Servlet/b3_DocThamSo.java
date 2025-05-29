@@ -8,8 +8,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/b3_DocThamSo")
 public class b3_DocThamSo extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.getRequestDispatcher("/views/b3_DocThamSo.jsp").forward(req, resp);
 	}
@@ -29,7 +27,6 @@ public class b3_DocThamSo extends HttpServlet {
         System.out.println("Giới tính: " + gender);
         System.out.println("Đã có gia đình? " + (married != null ? "Có" : "Chưa"));
         System.out.println("Quốc tịch: " + nationality);
-
         System.out.print("Sở thích: ");
         if (hobbies != null){
             for(String h : hobbies){

@@ -8,8 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:url value="/account/login" var="url" />
-	<form action="${url}" method="post">
+<%-- 	<c:url value="/account/login" var="url" /> --%>
+	<form action="../account/login" method="post">
 		<input name="un"><br> 
 		<input name="pw" type="password"><br>
 		<button>Login</button>
